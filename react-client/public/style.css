@@ -1,0 +1,17 @@
+:root {
+    --primary-theme-color: rgb(240, 98, 98);
+    --bg-color: #f0f1f3;
+    --default-font: 'Roboto', sans-serif;
+    --gray-font-color: rgb(75, 75, 75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--default-font);
+}
+
+body {
+    background-color: var(--bg-color);
+}

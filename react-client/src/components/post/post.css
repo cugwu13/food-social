@@ -1,0 +1,113 @@
+textarea {
+    background-color: var(--bg-color);
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    color: var(--gray-font-color);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea:hover {
+    filter: brightness(0.85);
+}
+
+.post-container {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 lightgray;
+    display: grid;
+    grid-template-rows: 2fr repeat(2, 1fr);
+    gap: 14px;
+    width: 50%;
+    padding: 14px;
+}
+
+.row-1,
+.row-2 {
+    display: grid;
+    align-items: center;
+}
+
+.row-1 {
+    grid-template-columns: 1fr 7fr;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.row-1 svg {
+    justify-self: center;
+}
+
+.row-2 {
+    grid-auto-flow: column;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 6px;
+}
+
+.row-2 > div {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-2 > div:hover {
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+.row-2 svg {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+.row-2 span {
+    color: var(--gray-font-color);
+    font-size: 16px;
+}
+
+.tag-user path {
+    fill: rgb(74, 131, 236);
+}
+
+.add-media path {
+    fill: rgb(99, 196, 99);
+}
+
+.row-3 {
+    display: flex;
+}
+
+#create-post {
+    background-color: var(--primary-theme-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#create-post:hover {
+    filter: brightness(0.85);
+}
+
+@media only screen and (max-width: 600px) {
+    .post-container {
+        width: 90%;
+    }
+}

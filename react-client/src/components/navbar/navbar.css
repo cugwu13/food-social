@@ -1,0 +1,63 @@
+.navbar-container {
+    background-color: var(--primary-theme-color);
+    box-shadow: 0 4px 6px 0 lightgray;
+    color: white;
+    display: flex;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+}
+
+.logo-container,
+.search-container,
+.navbar-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.fa-magnifying-glass,
+.fa-message,
+.fa-bell {
+    font-size: 25px;
+}
+
+.fa-message,
+.fa-bell {
+    cursor: pointer;
+}
+
+.logo-container {
+    flex: 3;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search-container {
+    flex: 6;
+    justify-content: center;
+    gap: 6px;
+}
+
+.search-container > input {
+    flex: 1;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 10px;
+}
+
+.search-container > input:focus {
+    outline: none;
+}
+
+.navbar-links-container {
+    flex: 3;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navbar-profile-pic {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}

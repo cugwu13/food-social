@@ -1,0 +1,35 @@
+.feed-post-container {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 lightgray;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 14px;
+    width: 100%;
+    padding: 14px;
+}
+
+.feed-post-row-1 {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.feed-post-row-1 > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.feed-post-username {
+    flex: 1;
+    font-size: 17px;
+}
+
+.feed-post-time-ago {
+    color: var(--gray-font-color);
+}
+
+.feed-pic {
+    width: 200px;
+    height: auto;
+}
